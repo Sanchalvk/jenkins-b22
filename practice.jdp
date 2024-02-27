@@ -1,3 +1,26 @@
 pipeline {
-    
+    agent any
+    stages {
+        stage('Pull'){
+            steps {
+                git 'https://github.com/jaychaudhari1252/studentapp-ui.git'
+            }
+        }
+         stage('Build'){
+            steps {
+                echo 'build sucess'
+            }
+        }
+         stage('Test'){
+            stapes{
+                echo 'Test Sucess'
+            }
+        }
+         stage(Deploy){
+            steps {
+                echo 'Deploy Sucess'
+            }
+            
+        }
+    }
 }
