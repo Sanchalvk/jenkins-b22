@@ -1,11 +1,5 @@
 node {  
     stage('Build') { 
-        
-    }
-    stage('Test') { 
-        
-    }
-    stage('Deploy') { 
-        
+        echo 'Scripted pipeline Job'
     }
 }
