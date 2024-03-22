@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('pull'){
-            step{
+            steps{
                 git 'https://github.com/Sanchalvk/studentapp-ui'
             }
         }
