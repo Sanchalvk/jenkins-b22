@@ -1,1 +1,10 @@
-
+pipeline{
+    agent any
+    stages{
+        stage('pull'){
+            step{
+                git 'https://github.com/Sanchalvk/studentapp-ui'
+            }
+        }
+    }
+}
