@@ -5,6 +5,9 @@ pipeline{
             steps{
                 git 'https://github.com/Sanchalvk/studentapp-ui'
             }
+        stage('build'){
+            sh '/opt/maven/bin/ mvn clean package'
+        }
         }
     }
 }
