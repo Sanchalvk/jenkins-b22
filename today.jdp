@@ -14,7 +14,7 @@ pipeline{
         stage('test'){
             steps{
                 sh'''
-                mvn clean verify sonar:sonar \
+                /opt/maven/bin/mvn clean verify sonar:sonar \
                 -Dsonar.projectKey=student \
                 -Dsonar.host.url=http://18.118.215.146:9000 \
                 -Dsonar.login=sqp_2d7b767ae03d73dc441b824e3bbab8eda9c4dc17
